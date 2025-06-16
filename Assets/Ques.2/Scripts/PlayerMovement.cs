@@ -27,10 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Jump();
     }
-    private void IA_Interact(InputAction.CallbackContext context)
-    {
-        detection.Interaction();
-    }
+    
 
     private void Awake()
     {
@@ -47,9 +44,13 @@ public class PlayerMovement : MonoBehaviour
         action.PlayerAction.Interact.started += IA_Interact;
         action.PlayerAction.Interact.Enable();
     }
+    private void IA_Interact(InputAction.CallbackContext context)
+    {
+        detection.Interaction();
+    }
     private void Update()
     {
-        inputValue = action.PlayerAction.Movement.ReadValue<float>();
+        inputValue = IA_Movement.ReadValue<float>();
     }
     private void FixedUpdate()
     {

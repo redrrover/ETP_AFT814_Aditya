@@ -594,9 +594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ecb77c191e978645886ec8cee5e3333, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveforce: 3
+  moveforce: 6.69
   Boxsize: {x: -0.14, y: 0.1}
-  castDistance: 0.59
+  castDistance: 0.69
   jumpForce: 5
 --- !u!70 &1925307802
 CapsuleCollider2D:
