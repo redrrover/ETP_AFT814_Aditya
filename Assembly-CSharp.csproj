@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Ques.2\Input\PlayerInputAction.cs" />
+    <Compile Include="Assets\Ques.2\Scripts\Detection.cs" />
     <Compile Include="Assets\Ques.2\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
